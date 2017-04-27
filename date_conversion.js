@@ -1,4 +1,3 @@
-"use-strict";
 // From here https://www.testdome.com/questions/javascript/date/8521?testId=14&testDifficulty=Easy
 
 // <------------------ INSTRUCTIONS ---------------------->
@@ -9,8 +8,13 @@ function formatDate(userDate) {
   // format from M/D/YYYY to YYYYMMDD
   var howLong = userDate.length;
   var year = userDate.slice (howLong - 4);
+  var month = userDate.slice(0, 2);
+  var day = userDate.slice(3, 5);
   // cut the month and day out, then add all back together
-  debug("The year is", year);
+  console.log("The year is", year);
+  console.log("The month is", month);
+  console.log("The day is", day);
+  return API_suitable = year + month + day;
 }
 
-debug(formatDate("12/31/2014"));
+console.log(formatDate("12/31/2014"));
