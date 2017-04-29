@@ -20,9 +20,19 @@ For example, after the first image has been removed from the gallery above, it's
     <button class="remove">X</button>
 </div> */
 
-function registerClickHandler () {
+function registerClickHandler (clicked) {
     // Implement the click handler here for button of class 'remove'
+    console.log("Tag Name", document.getElementsByTagName('img')[0].alt);
+    for (i=0; i < document.getElementsByClassName("remove").count; i++) {
+        document.getElementsByClassName("remove")[i].addEventListener("click", myFunction);
+    }
 }
+
+function myFunction() {
+    alert("Hello World!");
+}
+
+registerClickHandler();
 
 /* HTML code for testing purposes (do not submit uncommented):
  <div class="image">
