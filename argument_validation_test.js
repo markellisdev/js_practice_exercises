@@ -11,7 +11,7 @@ function ensure(value) {
     }
     //I'm not sure why the following won't work, but the above does
     /* else if (typeof(value) === "undefined") {
-     throw(error);
+        throw(error);
      } */
     else {
         throw(error);
